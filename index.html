@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Null - Presentation</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700;900&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@tsparticles/slim@3.3.0/tsparticles.slim.bundle.min.js"></script>
+</head>
+<body>
+    <div id="presentation-container">
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        
+        <!-- SVG Filter for Background Gradient -->
+        <svg class="hidden" style="display: none;">
+            <defs>
+                <filter id="blurMe">
+                    <feGaussianBlur in="SourceGraphic" stdDeviation="10" result="blur" />
+                    <feColorMatrix in="blur" mode="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 18 -8" result="goo" />
+                    <feBlend in="SourceGraphic" in2="goo" />
+                </filter>
+            </defs>
+        </svg>
+
+        <!-- Background Gradient Animation -->
+        <div class="gradients-container">
+            <div class="g1"></div>
+            <div class="g2"></div>
+            <div class="g3"></div>
+            <div class="g4"></div>
+            <div class="g5"></div>
+            <div class="interactive" id="interactive-blob"></div>
+        </div>
+
+        <!-- tsParticles Sparkles Layer -->
+        <div id="tsparticles" style="position: absolute; width: 100%; height: 100%; z-index: -1;"></div>
+
+        <div class="background-layer" id="bg-layer"></div>
+
+        <div class="slides-container" id="slides">
+            
+            <!-- Slide 1 -->
+            <section class="slide active" data-bg="">
+                <div class="glow center">
+                    <div class="glow-outer"></div>
+                    <div class="glow-inner"></div>
+                </div>
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h1 class="glitch" data-text="PROJECT NULL">PROJECT NULL</h1>
+                    <p class="classification">CLASSIFIED: TOP SECRET</p>
+                </div>
+            </section>
+
+            <!-- Slide 2 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="bg-logo-img" alt="Null Logo Background">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE ORIGINS</h2>
+                    <p>The year was 1955. Beneath an unmarked military installation hidden somewhere in Boston, Massachusetts, hundreds of feet below the earth, the United States government funded a project that officially did not exist.</p>
+                    <p>Scientists called it Project Null. To the military, it was an experiment in biological warfare and human enhancement. To Dr. Elias Vire, it was something far greater. It was proof that reality itself could be rewritten.</p>
+                </div>
+            </section>
+
+            <!-- Slide 3 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>ELIAS VIRE</h2>
+                    <p>Elias Vire had spent his entire life searching for order in a world he believed was fundamentally broken. As a child, he was fascinated by systems, patterns, and invisible laws that governed the universe.</p>
+                    <p>When his mother died from an unexplained neurological illness, something inside him fractured permanently. While others mourned, Elias obsessed over a single thought: if the universe followed rules, then death itself had to be another equation waiting to be solved. From that day forward, he no longer viewed reality as sacred. He viewed it as flawed.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 4 -->
+            <section class="slide" data-bg="">
+                <div class="glow center">
+                    <div class="glow-outer"></div>
+                    <div class="glow-inner"></div>
+                </div>
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="side-image-container">
+                    <img src="assets/null.png" alt="Elias Vire Character Sheet">
+                </div>
+                <div class="glass-panel content-panel right-panel">
+                    <h2>THE MASTERMIND</h2>
+                    <h3 class="accent">NULL</h3>
+                    <p>By his twenties, Elias had become one of the most brilliant theoretical physicists in the country. His ideas were considered dangerous by most scientists, but irresistible to the government. He theorized that matter was not fixed, that under enough pressure the atoms composing reality could be destabilized and rewritten.</p>
+                    <p>He called this unstable condition “the Null State.” To most people, it sounded impossible. To Elias, it was inevitable.</p>
+                    <blockquote class="character-quote">"Reality is imperfect. I don't destroy it. I correct it."</blockquote>
+                </div>
+            </section>
+
+            <!-- Slide 5 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h2>THE FUNDING</h2>
+                    <p>The government gave him unlimited funding, secret facilities, and absolute freedom. Deep underground, Project Null was born.</p>
+                    <p class="accent">But Elias needed a human subject.</p>
+                </div>
+            </section>
+
+            <!-- Slide 6 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>CHARLES RAY MOORE</h2>
+                    <p>That subject became Charles Ray Moore.</p>
+                    <p>In 1935 a baby was born, one that would change the course of history forever. By the time he was 8, his dad became a raging alcoholic due to the family’s financial situation. His alcoholism caused distance between him and Charles. Every time Charles would talk to his father he would get hit or threatened; the times where he didn’t, his mother would take the beatings for him.</p>
+                </div>
+                <div class="side-image-container">
+                    <img src="assets/charles.png" alt="Charles Character Sheet">
+                </div>
+            
+
+            </section>
+            <!-- Slide 7 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel right-panel">
+                    <h2>A BROKEN HOME</h2>
+                    <p>By the time Charles was 10, his mother tried to fight back, but his father ended up beating on her harder than he ever did. He would not hold back anymore and the beatings became more frequent.</p>
+                    <p>When Charles was 11, his dad got arrested for assault and battery. That left the house with an unfamiliar quietness that brought guilt and hatred to both Charles and his mother. Soon this hatred started bubbling up between them; they once relied on each other to get through all the tough times, and now Charles' mother became distant and cold.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 8 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE SOLDIER</h2>
+                    <h3 class="accent">DELTA-07</h3>
+                    <p>It is now 1953, Charles is 18 years old, and he decides to join the army. He feels as though he has nothing left to lose. He fought with no fear, or at least like someone who didn’t fear death. He wasn’t reckless but he wasn’t careful, talking back and not listening to orders from his superiors.</p>
+                    <p>Despite his carelessness for the rules, he moved up quickly in ranks thanks to his great espionage tactics that helped the US during the Cold War. In 1955, he was sent off to fight in the Vietnam War, and with the help of his nihilistic point of view, he carried his squadron.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 9 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE RECRUITMENT</h2>
+                    <p>Due to his behavior and work done during his years enlisted, he was called on by the president for a special project, a top-secret project that even his commanding officer didn't know about.</p>
+                    <p>The president and Elias Vire introduced the project: it was a type of particle accelerator that was being tested as a weapon of mass destruction. The accelerator was supposed to enhance physical attributes and grant unimaginable strength.</p>
+                    <p>Charles immediately agreed. After witnessing so many horrors, he hoped this machine would grant him death.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 10 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h2>AND THEN THE EXPERIMENT BEGAN...</h2>
+                </div>
+            
+
+            </section>
+            <!-- Slide 11 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE ACCELERATOR</h2>
+                    <p>Inside the chamber, enormous rings of energy ignited around Charles as the particle accelerator powered to life. At first, everything worked exactly as Elias predicted.</p>
+                    <p>Energy surged through Charles’ body while streams of data flooded across the monitors. His heart rate stabilized. Cellular activity increased. The impossible was becoming reality.</p>
+                    <p class="accent">Then something changed.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 12 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="side-image-container">
+                    <img src="assets/Charles Drawing.png" alt="Charles Drawing">
+                </div>
+                <div class="glass-panel content-panel right-panel">
+                    <h2>OVERLOAD</h2>
+                    <p>The machine began reacting not only to Charles’ body, but to his mind.</p>
+                    <p>Years of trauma, rage, and survival instinct fed directly into the accelerator’s unstable energy field. The reactor started to overload as reality itself warped inside the chamber.</p>
+                    <p>Gravity shifted. Steel bent inward. Lights flickered between existence and nonexistence. Alarms screamed through the facility.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 13 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE IMPLOSION</h2>
+                    <p>Inside the chamber, Elias realized the horrifying truth. The accelerator was no longer obeying physics. It was reacting to consciousness itself.</p>
+                    <p>Elias rushed toward the core manually, desperately attempting to stop the cascade before the entire facility collapsed. But he was too late.</p>
+                    <p>The reactor imploded. Instead of exploding outward, the accelerator folded inward like reality collapsing into itself. A wave of blinding white light consumed the chamber. For several seconds, the underground facility simply disappeared.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 14 -->
+            <section class="slide black-bg" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h2>THEN SILENCE.</h2>
+                </div>
+            
+
+            </section>
+            <!-- Slide 15 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE ONLOOKERS</h2>
+                    <p>As Charles staggered forward from the burning ruins of Project Null, two figures watched from the treeline beyond the facility’s outer perimeter. One of them stood frozen in disbelief. The other smiled nervously, as if the universe had once again narrowly avoided catastrophe on his behalf.</p>
+                    <p class="accent">Those two figures were Ricky and Dicky Wilson.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 16 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel split-panel center-panel">
+                    <div class="split-left">
+                        <h2>RICKY WILSON</h2>
+                        <h3 class="accent">Area of Misfortune</h3>
+                        <p>Born seconds before his twin. From the moment he entered the world, disaster followed. Lightbulbs pop, engines die, metal rusts. He emits a field where reality decays, malfunctions, and collapses over time.</p>
+                        <p>He lives as a hermit on the edge of town, protecting people from afar. If Dicky is the universe's apology... Ricky is the original mistake.</p>
+                        <blockquote class="character-quote">"I don't bring bad luck. I AM it."</blockquote>
+                    </div>
+                    <div class="split-right">
+                        <h2>DICKY WILSON</h2>
+                        <h3 class="accent">Absolute Probability</h3>
+                        <p>The "miracle child". Blessed with impossible fortune, Dicky unconsciously bends probability around himself, causing reality to twist into the most improbable outcomes in his favor. Guns jam, traffic lights turn green, coincidences save him.</p>
+                        <p>Determined to do something useful with the universe's favoritism, he became an action hero and secret protector of his brother.</p>
+                        <blockquote class="character-quote">"Statistically speaking, it's definitely playing favorites."</blockquote>
+                    </div>
+                </div>
+            
+
+            </section>
+            <!-- Slide 17 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE NIGHT IN QUESTION</h2>
+                    <p>Dicky had brought Ricky out of isolation that night. After years of hiding his older brother away from society because of the disasters that followed him everywhere, Dicky believed Ricky deserved to finally see the outside world again.</p>
+                    <p>But miles away from Boston, hidden beneath the earth, Project Null was beginning its activation sequence at the exact same moment Ricky unknowingly wandered too close to the facility.</p>
+                </div>
+                <div class="side-image-container">
+                    <img src="assets/dicky.png" alt="Dicky Character Sheet">
+                </div>
+            
+
+            </section>
+            <!-- Slide 18 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="side-image-container">
+                    <img src="assets/ricky.png" alt="Ricky Character Sheet">
+                </div>
+                <div class="glass-panel content-panel right-panel">
+                    <h2>THE CATALYST</h2>
+                    <p>His field of absolute misfortune spread silently around him, twisting probability itself into disaster.</p>
+                    <p>Inside the underground laboratory, the particle accelerator suddenly began malfunctioning in ways Elias Vire had never predicted. Cooling systems failed. Calibration readings corrupted. Electrical systems collapsed. What should have been the greatest scientific breakthrough in human history became a reality-shattering implosion.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 19 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE AFTERMATH</h2>
+                    <p>As the reactor collapsed inward, Ricky and Dicky witnessed the impossible. Through the smoke and collapsing steel, Charles emerged first, his body cracking and reforming unnaturally with every step.</p>
+                    <p>Behind him walked Elias Vire, flickering in and out of reality itself while the air distorted around him like broken glass. Neither man should have survived. Yet both walked away seemingly untouched.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 20 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h2>AMPLIFICATION</h2>
+                    <p>At that exact moment, the residual energy released by the implosion surged through Ricky and Dicky as well. The explosion amplified what already existed inside them.</p>
+                    <p>Ricky’s misfortune field became stronger and more uncontrollable, while Dicky’s impossible luck evolved into the power to subconsciously bend probability itself.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 21 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="bg-logo-img" alt="Null Logo Background">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE COVER-UP</h2>
+                    <p>The government immediately covered up the incident, declaring Project Null a catastrophic reactor failure that killed everyone involved. The facility was sealed, records were erased, and the world moved on.</p>
+                    <p>But beneath abandoned Cold War bunkers and forgotten research stations, Elias and Charles survived in secret for the next three years. Elias became obsessed with studying the changes within their bodies, convinced the experiment had revealed humanity’s next stage of evolution.</p>
+                </div>
+            </section>
+
+            <!-- Slide 22 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel right-panel">
+                    <h2>AN UNSTABLE PARTNERSHIP</h2>
+                    <p>Unlike Charles, Elias fully embraced what the experiment had made them. He convinced Charles that the world had betrayed them both—the government tried to erase them, scientists wanted to dissect them, and ordinary people would fear them forever.</p>
+                    <p>Null promised Charles something nobody else ever had: purpose. Together they began stealing reactor technology and rebuilding fragments of the original accelerator beneath abandoned factories and forgotten military bunkers.</p>
+                </div>
+            </section>
+
+            <!-- Slide 23 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE SUFFERING</h2>
+                    <p>But over time, their partnership became increasingly unstable. Charles’ powers worsened with every passing month. His body constantly shifted and reconstructed itself in painful bursts, leaving him exhausted and angry.</p>
+                    <p>Null, however, remained cold and fascinated by the process, recording every mutation like a scientist observing a lab rat. Eventually, Charles stopped seeing Elias as a partner and began seeing him for what he truly was: a man willing to sacrifice anyone for perfection.</p>
+                </div>
+                <div class="side-image-container">
+                    <img src="assets/nullDrawing.png" alt="Null Drawing">
+                </div>
+            
+
+            </section>
+            <!-- Slide 24 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE WATCHERS</h2>
+                    <p>Meanwhile, Ricky and Dicky secretly monitored the two survivors from a distance over the next three years. Dicky used his wealth, charm, and absurd luck to gather information about strange events connected to Project Null, while Ricky stayed hidden from society.</p>
+                    <p>Wherever Elias and Charles went, disasters followed. Entire laboratories mysteriously collapsed. Military convoys exploded without explanation. Witnesses reported seeing a flickering man accompanied by another whose body seemed to crack and reform like living stone.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 25 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel right-panel">
+                    <h2>PROTOTYPE ACCELERATOR</h2>
+                    <p>Three years after the original explosion, Elias finally completed a new prototype accelerator hidden beneath an abandoned industrial complex outside Boston. This version was smaller but far more unstable.</p>
+                    <p>Null believed activating it again would permanently stabilize both their conditions and allow him to reshape reality itself. Charles agreed to help one final time, hoping the machine could finally end his pain.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 26 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="bg-logo-img" alt="Null Logo Background">
+                <div class="glass-panel title-panel">
+                    <h2>THE INFILTRATION</h2>
+                    <p>At the same time, Ricky and Dicky discovered the location of the facility and realized another activation could destroy half the city if it failed.</p>
+                    <p>The night of the activation, the brothers infiltrated the complex together.</p>
+                </div>
+            </section>
+
+            <!-- Slide 27 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>COLLAPSE</h2>
+                    <p>As the reactor powered on, reality immediately began collapsing around the building. Hallways stretched unnaturally long, lights flickered between existence and nonexistence, and steel walls bent inward like paper.</p>
+                    <p>Ricky’s field of misfortune spread uncontrollably through the facility, causing electrical systems to short-circuit and support beams to crack apart, while Dicky’s impossible luck somehow kept the two alive through the chaos. Bullets jammed before firing. Explosions missed them by inches. Entire ceilings collapsed everywhere except where they happened to be standing.</p>
+                </div>
+                <div class="side-image-container">
+                    <img src="assets/Ricky Drawing.png" alt="Ricky Drawing">
+                </div>
+            
+
+            </section>
+            <!-- Slide 28 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE FINAL SHOWDOWN</h2>
+                    <p>At the center of the facility, Null and Charles stood beside the glowing reactor core as the machine spiraled out of control. For the first time in years, all four men faced one another.</p>
+                    <p class="accent">Charles attacked first.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 29 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="side-image-container">
+                    <img src="assets/Dicky Drawing.png" alt="Dicky Drawing">
+                </div>
+                <div class="glass-panel content-panel right-panel">
+                    <h2>RAW FORCE</h2>
+                    <p>His body violently reconfigured itself into a monstrous form as he charged toward the brothers, tearing through steel walls with raw force. Dicky grabbed a loose metal pipe off the floor to defend himself...</p>
+                    <p>But before Charles could reach him, one of the reactor’s overhead cranes suddenly snapped loose from the ceiling.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 30 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>THE HOOK</h2>
+                    <p>The massive hook swung wildly across the chamber, smacking directly into the back of Charles’ head with ridiculous precision and launching him into a control panel.</p>
+                    <p>At the exact same moment, another random system failure triggered an emergency fuel release valve. A pressurized pipe exploded directly beside Charles, sending him crashing backward into the unstable reactor core itself.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 31 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>OVERLOADED BEYOND REPAIR</h2>
+                    <p>For a brief second, Charles looked genuinely confused.</p>
+                    <p>Then his body began uncontrollably reconfiguring faster than ever before. Muscles, bones, and skin folded into themselves violently as the reactor overloaded his powers beyond repair.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 32 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h2>AN EMBARRASSING END</h2>
+                    <p>After years of surviving everything imaginable, Charles Ray Moore died because an industrial crane accidentally swung into his head.</p>
+                    <blockquote class="character-quote">"That’s… honestly kinda embarrassing." - Dicky</blockquote>
+                </div>
+            
+
+            </section>
+            <!-- Slide 33 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel right-panel">
+                    <h2>NULL's DESPERATION</h2>
+                    <p>Meanwhile, Null completely lost control of the reactor. Furious and desperate, he blamed Ricky’s misfortune field for destabilizing the accelerator.</p>
+                    <p>Reality fragmented around Elias as he attempted manually stabilizing the core with his gauntlet systems. But Ricky’s curse continued twisting probability itself against him.</p>
+                </div>
+            </section>
+
+            <!-- Slide 34 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>CASCADING MALFUNCTIONS</h2>
+                    <p>First, one of Null’s radiation vials cracked after slipping from his hand.</p>
+                    <p>Then another malfunction caused his Reality Anchor to short-circuit.</p>
+                    <p>Finally, as Elias tried activating his Partial Phase State to escape the collapsing chamber, a tiny loose bolt from the ceiling—shaken loose by the reactor instability—fell directly into the exposed circuitry of his stabilizer gauntlet.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 35 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>TOTAL DRIFT</h2>
+                    <p>The device exploded instantly.</p>
+                    <p>Null froze in place as his body began phasing uncontrollably between realities. Sections of him flickered violently in and out of existence while the reactor chamber collapsed around him. He reached desperately toward the control terminal, trying to regain stability, but Ricky’s field twisted every possible outcome against him.</p>
+                    <p>One final electrical surge shot through the chamber, overloading the Reality Anchor completely.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 36 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="bg-logo-img" alt="Null Logo Background">
+                <div class="glass-panel title-panel">
+                    <h2>UNINSTALLED</h2>
+                    <p>And then Elias Vire simply… stopped existing.</p>
+                    <p>Not dramatically. Not explosively.</p>
+                    <p>One moment he was there. The next moment there was only empty space where he had been standing.</p>
+                </div>
+            </section>
+
+            <!-- Slide 37 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel right-panel">
+                    <p>Ricky blinked awkwardly.</p>
+                    <p>Dicky looked around the room.</p>
+                    <blockquote class="character-quote">"Did… did he just uninstall himself?"</blockquote>
+                </div>
+            
+
+            </section>
+            <!-- Slide 38 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo left" alt="Null Logo">
+                <div class="glass-panel content-panel left-panel">
+                    <h2>ERASED FROM EXISTENCE</h2>
+                    <p>Seconds later, the accelerator imploded one final time, consuming the entire facility beneath a sphere of white light. Ricky and Dicky barely escaped the collapsing complex as the underground structure folded into itself and vanished beneath the earth forever.</p>
+                    <p>Official reports blamed the destruction on an illegal chemical explosion inside the abandoned factory. The truth was buried once again alongside Project Null itself. Charles Ray Moore and Elias Vire were never officially found, and the world moved on without ever learning how close reality itself came to collapsing.</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 39 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel content-panel center-panel">
+                    <h2>THE UNIVERSE'S SENSE OF HUMOR</h2>
+                    <p>But Ricky and Dicky never forgot.</p>
+                    <p>Because somewhere deep down, both brothers understood something terrifying:</p>
+                </div>
+            
+
+            </section>
+            <!-- Slide 40 -->
+            <section class="slide" data-bg="">
+                <img src="assets/nullLogo.png" class="corner-logo" alt="Null Logo">
+                <div class="glass-panel title-panel">
+                    <h2>THE TRUTH</h2>
+                    <p>The universe did not defeat Null and Charles through strength, heroism, or destiny.</p>
+                    <p class="accent">It defeated them through pure dumb luck and unbelievably bad timing.</p>
+                </div>
+            
+
+        </section>
+            
+            <!-- Slide 41 -->
+            <section class="slide" data-bg="">
+                <div class="glow center">
+                    <div class="glow-outer"></div>
+                    <div class="glow-inner"></div>
+                </div>
+                <div style="position: relative; margin: 0 auto; max-width: 1200px; width: 100%;">
+                    <div class="glass-panel title-panel" style="max-width: none; margin: 0;">
+                        <h1 class="glitch" data-text="THANK YOU">THANK YOU</h1>
+                        <p class="classification">END OF DOSSIER</p>
+                    </div>
+                    <img src="assets/nullLogo.png" class="stamp-logo" alt="Null Seal" style="position: absolute; bottom: -50px; right: -50px; width: 200px; z-index: 50; opacity: 0.85; transform: rotate(-25deg); filter: drop-shadow(0 0 15px rgba(200, 10, 10, 0.9)) contrast(1.2); pointer-events: none;">
+                </div>
+            </section>
+        </div>
+
+        <div class="controls">
+            <button id="prev-btn" class="nav-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+            </button>
+            <span class="slide-counter"><span id="current-slide">1</span> / <span id="total-slides">41</span></span>
+            <button id="next-btn" class="nav-btn">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+            </button>
+        </div>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
